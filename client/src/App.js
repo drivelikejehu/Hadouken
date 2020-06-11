@@ -51,9 +51,7 @@ function App() {
         </Switch>
         </article>
       </main>
-      <footer>
         <Footer/>
-      </footer>
       </Router>
       </>
   );

@@ -1,14 +1,14 @@
-module.exports = (sequelize, DataTypes) => {
-  const User = sequelize.define("User", {
+module.exports = function (sequelize, DataTypes) {
+  const User = sequelize.define(User, {
     firstName: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: { is: /^[a-zA-Z]{2,13}$/ },
+      validate: { is: /^[a-zA-Z]{2,13}$/}
     },
     lastName: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: { is: /^[a-zA-Z]{2,13}$/ },
+      validate: { is: /^[a-zA-Z]{2,13}$/}
     },
     email: {
       type: DataTypes.STRING,
@@ -28,12 +28,15 @@ module.exports = (sequelize, DataTypes) => {
       validate: { is: /^[a-z0-9_-]{3,15}$/ },
     },
     birthday: {
-      type: Date,
-      allowNull: true,
+        type: Date,
+        allowNull: true,       
     },
-    picURL: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
+    picURL:{
+        type: DataTypes.STRING,
+        allowNull: true
+    }
   });
+  User.associate = (models) => {
+
+  }
 };
