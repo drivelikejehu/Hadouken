@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Navbar extends Component {
+class SF2Guile extends Component {
     render() {
         return (
             <div>
-              Navbar  
+                duh nuh nuh na na
             </div>
         );
     }
 }
 
-export default Navbar;
+export default SF2Guile;

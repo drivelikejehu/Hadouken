@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Navbar extends Component {
+class NotFound extends Component {
     render() {
         return (
             <div>
-              Navbar  
+              how'd you get here  
             </div>
         );
     }
 }
 
-export default Navbar;
+export default NotFound;
