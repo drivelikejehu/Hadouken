@@ -4,7 +4,7 @@ class Login extends Component {
     render() {
         return (
             <div>
-                login checker
+               <h1>Welcome to Hadouken!</h1>
             </div>
         );
     }
