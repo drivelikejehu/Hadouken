@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Account extends Component {
+class SF2Guile extends Component {
     render() {
         return (
             <div>
-               account page 
+                duh nuh nuh na na
             </div>
         );
     }
 }
 
-export default Account;
+export default SF2Guile;
