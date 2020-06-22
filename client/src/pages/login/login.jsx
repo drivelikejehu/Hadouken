@@ -3,26 +3,6 @@ import Logo from '../../images/hadouken.jpg'
 
 
 class Login extends Component {
-<<<<<<< HEAD
-    render() {
-        return (
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-4">
-                        
-                    </div>
-                    <div className="col-sm-4">
-                    <h1>Welcome to Hadouken!</h1> 
-                    </div>
-                    <div className="col-sm-4">
-                        
-                    </div>
-                </div>
-            </div>
-            
-        );
-    }
-=======
 
   render() {
     return (
@@ -91,7 +71,6 @@ class Login extends Component {
       </div>
     );
   }
->>>>>>> 22b4182397affd89b950d3c9c1518100d6546cdf
 }
 
 export default Login;
