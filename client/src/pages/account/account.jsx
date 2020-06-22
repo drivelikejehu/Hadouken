@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 
 class Account extends Component {
-<<<<<<< HEAD
-    render() {
-        return (
-            <div>
-                account
-=======
 
 handleSubmittedAvatar = (event) => {
     event.preventDefault();
@@ -37,7 +31,6 @@ handleSubmitUsername = (event) => {
                 </div>
               </div>
             </form>
->>>>>>> 19a404b6ae8bd14593baa3bfc24ac8f936614249
             </div>
           <div className="col-4">Placeholder for flexbox spacing</div>
         </div>
