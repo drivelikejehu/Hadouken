@@ -56,7 +56,7 @@ class Login extends Component {
                       type="button"
                        className="btn btn-primary"
                        id="signup"
-                       href="/makeaccount">
+                       href="/signup">
                          Sign Up?
                       </a>
                     </div>

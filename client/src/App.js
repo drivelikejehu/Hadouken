@@ -26,7 +26,7 @@ function App() {
           >
         <Login />
          </Route>
-        <Route exact path="/makeaccount">
+        <Route exact path="/signup">
           <Signup/> 
         </Route>
           <Route
