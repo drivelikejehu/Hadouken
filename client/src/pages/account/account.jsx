@@ -2,6 +2,11 @@ import React, { Component } from "react";
 
 class Account extends Component {
 
+handleSubmittedAvatar = (event) => {
+    event.preventDefault();
+    console.log("edit pic is actually logging m8")
+}
+
 handleSubmitUsername = (event) => {
     event.preventDefault();
     console.log("this form is working yeet")
@@ -11,9 +16,23 @@ handleSubmitUsername = (event) => {
     return (
       <div className="container" id="hadouken_contain">
         <div className="row">
-          <div className="col-4">PLaceholder for Edit pic... pic?</div>
-          <div className="col-6">Placeholder for edit pic dialogue</div>
-          <div className="col-2">Placeholder for flexbox spacing</div>
+          <div className="col-4">Placeholder for Edit pic... pic?</div>
+          <div className="col-4"><form onSubmit={this.handleSubmittedAvatar}>
+              <div className="input-group mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Edit Avatar"
+                  aria-label="Avatar Edit Button"
+                  aria-describedby="Avatar Edit Button"
+                />
+                <div className="input-group-append">
+                <button className="btn btn-primary" type="submit" name="action">Submit</button>
+                </div>
+              </div>
+            </form>
+            </div>
+          <div className="col-4">Placeholder for flexbox spacing</div>
         </div>
         <div className="row">
           <div className="col-4">spacing</div>
@@ -32,14 +51,10 @@ handleSubmitUsername = (event) => {
                   aria-label="Username Edit Button"
                   aria-describedby="Username Edit Button"
                 />
+                <div className="input-group-append">
+                <button className="btn btn-primary" type="submit" name="action">Submit</button>
+                </div>
               </div>
-              <button
-              className="btn btn-primary"
-                type="submit"
-                name="action"
-                >
-                    Submit
-                </button>
             </form>
           </div>
           <div className="col-4">spacing</div>
