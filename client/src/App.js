@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import ReactDOM from 'react-dom'
 import Button from '@material-ui/core/Button'
@@ -26,7 +26,7 @@ function App() {
           >
         <Login />
          </Route>
-        <Route exact path="/makeaccount">
+        <Route exact path="/signup">
           <Signup/> 
         </Route>
           <Route
