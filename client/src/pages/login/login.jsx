@@ -1,13 +1,17 @@
 import React, { Component } from "react";
+import Logo from '../../images/hadouken.jpg'
+
+
 class Login extends Component {
+
   render() {
     return (
       <div className="container" id="hadouken_contain">
         <h1>Welcome to Hadouken!</h1>
         <div className="row">
           <div className="col">
-            <div class="card">
-              <div class="card-body">
+            <div className="card">
+              <div className="card-body">
                 <form>
                   <div className="form-group">
                     <label for="exampleInputEmail1">Email address</label>
@@ -40,12 +44,21 @@ class Login extends Component {
                       <div className="col-3">
                       </div>
                     <div className="col-3">
-                      <button type="submit" className="btn btn-primary">
-                        Log In
-                      </button>
+                      {/* this is temporary measure until we build the actual on submit crap */}
+                      <a className="btn btn-primary"
+                      href="/games"
+                      type="submit">
+                        Log in?
+                      </a>
                     </div>
                     <div className="col-3">
-                      <button className="btn btn-primary">Sign Up</button>
+                      <a
+                      type="button"
+                       className="btn btn-primary"
+                       id="signup"
+                       href="/makeaccount">
+                         Sign Up?
+                      </a>
                     </div>
                     <div className="col-3">
                     </div>
