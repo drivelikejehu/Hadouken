@@ -25,9 +25,9 @@ function App() {
           exact path={["/", "/login"]}
           >
         <Login />
-        <Route exact path="/signup">
-          <Signup/>
-          </Route>
+         </Route>
+        <Route exact path="/makeaccount">
+          <Signup/> 
         </Route>
           <Route
           exact path={["/games", "/home"]}>
@@ -44,7 +44,7 @@ function App() {
           <Route  exact path="/account">
           <Account/>
           </Route>
-          <Route path="*">
+          <Route exact path={["*"]}>
             <NotFound />
           </Route>
         </Switch>

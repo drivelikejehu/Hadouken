@@ -6,7 +6,7 @@ class Footer extends Component {
         return (
             <footer className="footer">
             <div className="container">
-              <span className="text-muted">Place sticky footer content here.</span>
+              <span className="text-muted">RJK Productions</span>
             </div>
           </footer>
            
