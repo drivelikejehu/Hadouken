@@ -7,8 +7,8 @@ class Signup extends Component {
         <div className="row">
           <div className="col"></div>
           <div className="col">
-            <div className="card">
-              <div className="card-body text-center">
+            <div className="card justify-content-center">
+              <div className="card-body">
                 <form>
                   <div className="form-group">
                     <input
