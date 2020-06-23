@@ -7,6 +7,14 @@ class SF2 extends Component {
         gamePic:
           "https://cdn.wikimg.net/en/strategywiki/images/c/c8/SSF2T_Guile.gif",
         gameName: "Guile",
+        searchTerm: ""
+      };
+
+      handleChange = (event) => {
+        const { name, value } = event.target;
+        this.setState({
+          [name]: value,
+        });
       };
       
       render() {
@@ -19,9 +27,10 @@ class SF2 extends Component {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Please enter employee search criteria"
+                      placeholder="Please enter a fighter"
                       name="searchTerm"
-                      value="search term"
+                      value={this.state.searchTerm}
+                      onChange={this.handleChange}
                     />
                   </div>
                 </div>
