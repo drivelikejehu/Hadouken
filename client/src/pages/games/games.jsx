@@ -1,7 +1,12 @@
 import React, { Component } from "react";
-import GameCard from "../../components/GameCard/GameCard.jsx"
+import GameCard from "../../components/GameCard/GameCard.jsx";
 
 class Games extends Component {
+  state = {
+    gamePic:
+      "https://upload.wikimedia.org/wikipedia/en/f/f5/Street_Fighter_II_Dash_%28flyer%29.png",
+    gameName: "SF2 CE",
+  };
   render() {
     return (
       <div className="container text-center">
@@ -62,6 +67,7 @@ class Games extends Component {
             />
             </div>
             <div className="col-2">spacing</div>
+
         </div>
       </div>
     );
