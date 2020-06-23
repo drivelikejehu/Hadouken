@@ -12,11 +12,16 @@ handleSubmitUsername = (event) => {
     console.log("this form is working yeet")
 }
 
+handleSubmitBirthday = (event) => {
+    event.preventDefault();
+    console.log("birthday, it's yo birthday")
+}
+
   render() {
     return (
       <div className="container" id="hadouken_contain">
         <div className="row">
-          <div className="col-4">Placeholder for Edit pic... pic?</div>
+          <div className="col-4"><img src="https://www.fillmurray.com/140/200" alt="Placeholder"/></div>
           <div className="col-4"><form onSubmit={this.handleSubmittedAvatar}>
               <div className="input-group mb-3">
                 <input
@@ -32,18 +37,13 @@ handleSubmitUsername = (event) => {
               </div>
             </form>
             </div>
-          <div className="col-4">Placeholder for flexbox spacing</div>
+          <div className="col-4"></div>
         </div>
         <div className="row">
-          <div className="col-4">spacing</div>
+          <div className="col-4"></div>
           <div className="col">
             <form onSubmit={this.handleSubmitUsername}>
               <div className="input-group mb-3">
-                <div className="input-group-prepend">
-                  <span className="input-group-text" id="basic-addon1">
-                    @
-                  </span>
-                </div>
                 <input
                   type="text"
                   className="form-control"
@@ -57,13 +57,26 @@ handleSubmitUsername = (event) => {
               </div>
             </form>
           </div>
-          <div className="col-4">spacing</div>
+          <div className="col-4"></div>
         </div>
         <div className="row">
-          <div className="col">placeholder for Birthday</div>
+        <div className="col-4"></div>
+          <div className="col">Birthday</div>
+          <div className="col-4"></div>
         </div>
         <div className="row">
-          <div className="col">placeholder for birthday input</div>
+            <div className="col-4"></div>
+          <div className="col">
+              <form onSubmit={this.handleSubmitBirthday}>
+          <div className="input-group mb-3">
+              <input type="date" name="birthday" id="birthday_thing"/>
+              </div>
+              <div className="input-group-append">
+                <button className="btn btn-primary" type="submit" name="action">Submit</button>
+                </div>
+          </form>
+          </div>
+          <div className="col-4"></div>
         </div>
       </div>
     );
