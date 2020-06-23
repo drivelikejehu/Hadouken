@@ -1,10 +1,8 @@
-<<<<<<< HEAD
-/* #hadouken_header{
-    text-align: center;
-    } */
-=======
 #hadouken_contain{
     text-align: center;
     }
 
->>>>>>> 22b4182397affd89b950d3c9c1518100d6546cdf
+
+#gameCard{
+    width: 18rem;
+}
