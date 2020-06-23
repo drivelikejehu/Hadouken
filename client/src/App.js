@@ -49,8 +49,9 @@ function App() {
           </Route>
         </Switch>
         </article>
+        {/* <Footer/> */}
+        {/* have to fix stupid bootstrap issues with react, because BS is bs */}
       </main>
-        <Footer/>
       </Router>
       </>
   );
