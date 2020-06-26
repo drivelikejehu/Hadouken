@@ -1,84 +1,96 @@
 import React, { Component } from "react";
 
 class Account extends Component {
+  state = {
+    avatar: "",
+    avatarUrl: "https://www.fillmurray.com/140/200",
+    username: "",
+    birthday: "",
+  };
 
-handleSubmittedAvatar = (event) => {
-    event.preventDefault();
-    console.log("edit pic is actually logging m8")
-}
+  handleInputChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value,
+    });
+  };
 
-handleSubmitUsername = (event) => {
+  handleSubmitAvatar = (event) => {
     event.preventDefault();
-    console.log("this form is working yeet")
-}
+    const avatarUrl = this.state.avatar;
+    this.setState({
+      avatar: "",
+      avatarUrl: avatarUrl
+    });
+    console.log("Submit Avatar");
+  };
 
-handleSubmitBirthday = (event) => {
+  handleSubmitUsername = (event) => {
     event.preventDefault();
-    console.log("birthday, it's yo birthday")
-}
+    this.setState({
+      username: "",
+    });
+    console.log("Submit Username");
+  };
+
+  handleSubmitBirthday = (event) => {
+    event.preventDefault();
+    this.setState({
+      birthday: "",
+    });
+    console.log("Submit Birthday");
+  };
 
   render() {
     return (
-      <div className="container" id="hadouken_contain">
-        <div className="row">
-          <div className="col-4"><img src="https://www.fillmurray.com/140/200" alt="Placeholder"/></div>
-          <div className="col-4"><form onSubmit={this.handleSubmittedAvatar}>
-              <div className="input-group mb-3">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Edit Avatar"
-                  aria-label="Avatar Edit Button"
-                  aria-describedby="Avatar Edit Button"
-                />
-                <div className="input-group-append">
-                <button className="btn btn-primary" type="submit" name="action">Submit</button>
-                </div>
-              </div>
-            </form>
+      <>
+        <div className="container" id="hadouken_contain">
+          <div className="row">
+            <div className="col-4">
+              <img src={this.state.avatarUrl} alt="Placeholder" />
             </div>
-          <div className="col-4"></div>
-        </div>
-        <div className="row">
-          <div className="col-4"></div>
-          <div className="col">
-            <form onSubmit={this.handleSubmitUsername}>
-              <div className="input-group mb-3">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Edit Username"
-                  aria-label="Username Edit Button"
-                  aria-describedby="Username Edit Button"
-                />
-                <div className="input-group-append">
-                <button className="btn btn-primary" type="submit" name="action">Submit</button>
+            <div className="col-4">
+              <div className="card justify-content-center">
+                <div className="card-body">
+                  <form className="form" onSubmit={this.handleSubmitAvatar}>
+                    <input
+                      id="avatar"
+                      type="text"
+                      name="avatar"
+                      value={this.state.avatar}
+                      placeholder="Enter new Avatar url"
+                      onChange={this.handleInputChange}
+                    />
+                    <button className="btn btn-primary">Submit</button>
+                  </form>
+                  <form className="form" onSubmit={this.handleSubmitUsername}>
+                    <input
+                      id="username"
+                      type="text"
+                      name="username"
+                      value={this.state.username}
+                      placeholder="Enter new username"
+                      onChange={this.handleInputChange}
+                    />
+                    <button className="btn btn-primary">Submit</button>
+                  </form>
+                  <form className="form" onSubmit={this.handleSubmitBirthday}>
+                    <input
+                      id="birthday"
+                      type="text"
+                      name="birthday"
+                      value={this.state.birthday}
+                      placeholder="Enter new birthday"
+                      onChange={this.handleInputChange}
+                    />
+                    <button className="btn btn-primary">Submit</button>
+                  </form>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
-          <div className="col-4"></div>
         </div>
-        <div className="row">
-        <div className="col-4"></div>
-          <div className="col">Birthday</div>
-          <div className="col-4"></div>
-        </div>
-        <div className="row">
-            <div className="col-4"></div>
-          <div className="col">
-              <form onSubmit={this.handleSubmitBirthday}>
-          <div className="input-group mb-3">
-              <input type="date" name="birthday" id="birthday_thing"/>
-              </div>
-              <div className="input-group-append">
-                <button className="btn btn-primary" type="submit" name="action">Submit</button>
-                </div>
-          </form>
-          </div>
-          <div className="col-4"></div>
-        </div>
-      </div>
+      </>
     );
   }
 }
