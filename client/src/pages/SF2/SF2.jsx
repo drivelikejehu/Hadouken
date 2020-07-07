@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import Card from "../../components/Shared/Card/Card"
+import Card from "../../components/Shared/Card/Card";
 
 class SF2 extends Component {
   state = {
     searchTerm: "",
+    charName: "",
   };
 
   handleChange = (event) => {
@@ -12,6 +13,7 @@ class SF2 extends Component {
       [name]: value,
     });
   };
+
 
   render() {
     return (
@@ -40,56 +42,68 @@ class SF2 extends Component {
         <div className="row">
           <div className="col-3">
             <Card
-              src="https://cdn.wikimg.net/en/strategywiki/images/c/c8/SSF2T_Guile.gif"
-              title="Guile"
-              url="/SF2guile"
-              desc="It's Guile. You know the man"
-            />
-          </div>
-          <div className="col-1"></div>
-          <div className="col-3">
-            <Card
               src="https://vignette.wikia.nocookie.net/streetfighter/images/7/72/Sf-ryuold.gif/revision/latest?cb=20080211020008"
               title="Ryu"
               url="/SF2Ryu"
-              desc="Ryu. The Mario of SF2."
+              desc="The Highlander"
             />
           </div>
-          <div className="col-1"></div>
           <div className="col-3">
             <Card
-              src="https://cdn.wikimg.net/en/strategywiki/images/a/a4/SSF2T_Ken.gif"
-              title="Ken"
-              url="/SF2Ken"
-              desc="Ken. You know the man"
+              src="https://vignette.wikia.nocookie.net/streetfighter/images/f/f1/EHonda_breathe.gif/revision/latest?cb=20080212074417"
+              title="E. Honda"
+              url="/SF2Honda"
+              desc="Edward"
+            />
+          </div>
+          <div className="col-3">
+            <Card
+              src="https://vignette.wikia.nocookie.net/streetfighter/images/1/15/Sf-blankaold.gif/revision/latest?cb=20080209060758"
+              title="Blanka"
+              url="/SF2Blanka"
+              desc="Blanquito"
+            />
+          </div>
+          <div className="col-3">
+            <Card
+              src="https://vignette.wikia.nocookie.net/streetfighter/images/5/5c/Guile-oldstance.gif/revision/latest?cb=20080209192854"
+              title="Guile"
+              url="/SF2guile"
+              desc="Army dude"
             />
           </div>
         </div>
         <div className="row">
           <div className="col-3">
             <Card
+              src="https://vignette.wikia.nocookie.net/streetfighter/images/6/6b/Ken_breathe.gif/revision/latest?cb=20080212074601"
+              title="Ken"
+              url="/SF2Ken"
+              desc="Family Man"
+            />
+          </div>
+          <div className="col-3">
+            <Card
               src="https://vignette.wikia.nocookie.net/streetfighter/images/9/93/ChunLi_breathe.gif/revision/latest?cb=20080212074238"
               title="Chun-Li"
               url="/SF2ChunLi"
-              desc="It's Chun-Li. You know the woman"
+              desc="The First Lady"
             />
           </div>
-          <div className="col-1"></div>
-          <div className="col-3">
-            <Card
-              src="https://vignette.wikia.nocookie.net/streetfighter/images/c/c6/Classic-dhalsim.gif/revision/latest?cb=20080209063752"
-              title="Dhalsim"
-              url="/SF2Dhalsim"
-              desc="Dhalsim. He's a zoner, with long limbs."
-            />
-          </div>
-          <div className="col-1"></div>
           <div className="col-3">
             <Card
               src="https://vignette.wikia.nocookie.net/streetfighter/images/0/07/Zangief-sf2-s1.gif/revision/latest?cb=20080211044340"
               title="Zangief"
               url="/SF2Zangief"
-              desc="Zangief. Big Russian Grappler."
+              desc="Muscle Power!"
+            />
+          </div>
+          <div className="col-3">
+            <Card
+              src="https://vignette.wikia.nocookie.net/streetfighter/images/c/c6/Classic-dhalsim.gif/revision/latest?cb=20080209063752"
+              title="Dhalsim"
+              url="/SF2Dhalsim"
+              desc="Floaty"
             />
           </div>
         </div>
