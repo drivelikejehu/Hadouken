@@ -20,7 +20,7 @@ class Account extends Component {
     const avatarUrl = this.state.avatar;
     this.setState({
       avatar: "",
-      avatarUrl: avatarUrl
+      avatarUrl: avatarUrl,
     });
     console.log("Submit Avatar");
   };
@@ -30,7 +30,7 @@ class Account extends Component {
     this.setState({
       username: "",
     });
-    console.log("Submit Username");
+    console.log(`username is ${this.state.username}`);
   };
 
   handleSubmitBirthday = (event) => {
@@ -38,7 +38,7 @@ class Account extends Component {
     this.setState({
       birthday: "",
     });
-    console.log("Submit Birthday");
+    console.log(`birthday is ${this.state.birthday}`);
   };
 
   render() {
@@ -46,10 +46,10 @@ class Account extends Component {
       <>
         <div className="container" id="hadouken_contain">
           <div className="row">
-            <div className="col-4">
+            <div className="col-sm-4">
               <img src={this.state.avatarUrl} alt="Placeholder" />
             </div>
-            <div className="col-4">
+            <div className="col-sm-4">
               <div className="card justify-content-center">
                 <div className="card-body">
                   <form className="form" onSubmit={this.handleSubmitAvatar}>
@@ -88,6 +88,7 @@ class Account extends Component {
                 </div>
               </div>
             </div>
+            <div className="col-sm-4"></div>
           </div>
         </div>
       </>
