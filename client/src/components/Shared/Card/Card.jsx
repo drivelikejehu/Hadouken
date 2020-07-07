@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = (props) => {
   return (
-    <div className="card justify-content-center" id="gameCard">
+    <div className="card justify-content-center">
       <img className="card-img-top" src={props.src} alt={props.title} />
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
