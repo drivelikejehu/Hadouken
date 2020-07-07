@@ -4,6 +4,7 @@ import Card from "../../components/Shared/Card/Card"
 class SF2 extends Component {
   state = {
     searchTerm: "",
+    charName: ""
   };
 
   handleChange = (event) => {
@@ -13,6 +14,10 @@ class SF2 extends Component {
     });
   };
 
+ handleClick = (event) => {
+  console.log("this shit is confusing")
+    }
+    
   render() {
     return (
       <div className="container text-center">
@@ -44,6 +49,7 @@ class SF2 extends Component {
               title="Guile"
               url="/SF2guile"
               desc="It's Guile. You know the man"
+              onSubmit={this.handleClick}
             />
           </div>
           <div className="col-1"></div>
