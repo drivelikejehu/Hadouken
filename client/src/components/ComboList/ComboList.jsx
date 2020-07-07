@@ -68,35 +68,32 @@ class ComboList extends Component {
           <div className="col-7">
             <form>
               <div className="form-group">
-                <label for="exampleInputEmail1">Combo Name</label>
+                <label for="ComboNamer">Combo Name</label>
                 <input
                   type="email"
                   className="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
+                  id="ComboNamer"
+                  aria-describedby="ComboNamer"
+                  placeholder="Enter your combo's name"
                 />
-                <small id="emailHelp" className="form-text text-muted">
-                  We'll never share your email with anyone else.
-                </small>
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
+                <label for="exampleInputPassword1">Combo Inputs</label>
                 <input
-                  type="password"
+                  type="text"
                   className="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Password"
+                  id="ComboInputs"
+                  placeholder="Input your combo's command here"
                 />
               </div>
               <div class="form-check">
                 <input
                   type="checkbox"
                   className="form-check-input"
-                  id="exampleCheck1"
+                  id="ComboChecker"
                 />
-                <label className="form-check-label" for="exampleCheck1">
-                  Check me out
+                <label className="form-check-label" for="ComboCheck1">
+                  Are you sure?
                 </label>
               </div>
               <button type="submit" className="btn btn-primary">
