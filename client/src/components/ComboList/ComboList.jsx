@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-class ComboList extends Component {
-  render() {
+const ComboList = (props) => {
+
     return (
       <>
         <div className="row">
@@ -15,20 +15,20 @@ class ComboList extends Component {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Saved Combos
+               {props.char}'s Saved Combos
               </button>
               <div
                 className="dropdown-menu"
                 aria-labelledby="dropdownMenuButton"
               >
                 <a className="dropdown-item" href="#">
-                  Combo 1
+                  {props.combo1}
                 </a>
                 <a className="dropdown-item" href="#">
-                  Combo 2
+                  {props.combo2}
                 </a>
                 <a className="dropdown-item" href="#">
-                  Combo 3
+                    {props.combo3}
                 </a>
               </div>
             </div>
@@ -48,17 +48,17 @@ class ComboList extends Component {
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>test1</td>
+                  <td>{props.combo1}</td>
                   <td>lk</td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>test2</td>
+                  <td>{props.combo2}</td>
                   <td>QCF-K,Rp</td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>test3</td>
+                  <td>{props.combo3}</td>
                   <td>dp, lk, rk</td>
                 </tr>
               </tbody>
@@ -83,7 +83,7 @@ class ComboList extends Component {
                   type="text"
                   className="form-control"
                   id="ComboInputs"
-                  placeholder="Input your combo's command here"
+                  placeholder="Input your combo's commands here"
                 />
               </div>
               <div class="form-check">
@@ -105,6 +105,5 @@ class ComboList extends Component {
       </>
     );
   }
-}
 
 export default ComboList;
