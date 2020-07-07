@@ -10,7 +10,7 @@ import Signup from "./pages/Signup/Signup";
 import NotFound from "./pages/NotFound/NotFound";
 import SF2 from "./pages/SF2/SF2";
 import SF2Guile from "./pages/SF2/Characters/SF2Guile";
-import Footer from "./components/Shared/Footer/Footer";
+// import Footer from "./components/Shared/Footer/Footer";
 import Tek7 from "./pages/Tek7/Tek7";
 import SSBU from "./pages/SSBU/SSBU";
 import DBFZ from "./pages/DBFZ/DBFZ";
@@ -53,7 +53,7 @@ function App() {
                 <NotFound />
               </Route>
             </Switch>
-            <Footer />
+            {/* <Footer /> */}
           </article>
         </main>
       </Router>

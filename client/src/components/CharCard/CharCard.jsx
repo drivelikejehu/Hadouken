@@ -7,7 +7,7 @@ const CharCard = (props) => {
       <div className="card-body">
         <h5 className="card-title">{props.charName}</h5>
         <p className="card-text">{props.charDesc}</p>
-        <a href="#" className="btn btn-primary" href={props.charURL}>
+        <a className="btn btn-primary" href={props.charURL}>
           Go to {props.charName}'s character page?
         </a>
       </div>
