@@ -31,9 +31,9 @@ class Games extends Component {
           <div className="col-2"></div>
           <div className="col-3">
             <Card
-              src="https://upload.wikimedia.org/wikipedia/en/f/f5/Street_Fighter_II_Dash_%28flyer%29.png"
-              title="SF2 CE"
-              desc="Street Fighter 2. you know what this is."
+              src="https://www.fightersgeneration.com/games/sf2-fly.jpg"
+              title="SF2"
+              desc="The World Warriors"
               url="../SF2"
             />
           </div>
@@ -42,7 +42,7 @@ class Games extends Component {
             <Card
               src="https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Official_Tekken_7_Logo.jpg/220px-Official_Tekken_7_Logo.jpg"
               title="Tekken 7"
-              desc="Tekken 7 is a 3d fighter bro"
+              desc="3D Mishima"
               url="../Tekken7"
             />
           </div>
@@ -53,17 +53,17 @@ class Games extends Component {
           <div className="col-3">
             <Card
               src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/DBFZ_cover_art.jpg/220px-DBFZ_cover_art.jpg"
-              title="Dragon Ball Fighterz"
-              desc="cell is mad annoying"
+              title="DBFZ"
+              desc="Cell's Revenge"
               url="../DBFZ"
             />
           </div>
           <div className="col-2"></div>
           <div className="col-3">
             <Card
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Super_Smash_Bros._Ultimate.jpg/220px-Super_Smash_Bros._Ultimate.jpg" 
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Super_Smash_Bros._Ultimate.jpg/220px-Super_Smash_Bros._Ultimate.jpg"
               title="SSBU"
-              desc="Super Smash Bros. Ultimate, has Min Min now!"
+              desc="Now with more Min Min!"
               url="../SSBU"
             />
           </div>
