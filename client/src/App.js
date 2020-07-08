@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import ReactDOM from 'react-dom'
 // import Button from '@material-ui/core/Button'
@@ -9,24 +9,29 @@ import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import NotFound from "./pages/NotFound/NotFound";
 // import Footer from "./components/Shared/Footer/Footer";
+
 function App() {
+  // const [userObject, setUserObject] = useState({});
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <>
       <Router>
         <main>
           <article>
+          {/* <Navbar isLoggedIn={isLoggedIn} userObject={userObject} /> */}
             <Navbar />
             <Switch>
               <Route exact path={["/", "/login"]}>
                 <Login />
               </Route>
-              <Route exact path="/signup">
+              <Route exact path={["/signup"]}>
                 <Signup />
               </Route>
-              <Route exact path="/games">
+              <Route exact path={["/games"]}>
                 <Games />
               </Route>
-              <Route exact path="/account">
+              <Route exact path={["/account"]}>
                 <Account />
               </Route>
               <Route exact path={["*"]}>

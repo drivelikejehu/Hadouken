@@ -2,7 +2,17 @@ import React, { Component } from "react";
 import Card from "../../components/Shared/Card/Card";
 
 class Games extends Component {
-  state = {};
+  state = {
+    result: {},
+    search: "",
+  };
+
+  handleInputChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value,
+    });
+  };
 
   render() {
     return (
@@ -14,9 +24,10 @@ class Games extends Component {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Please enter employee search criteria"
-                  name="searchTerm"
-                  value="search term"
+                  placeholder="Choose your arena"
+                  name="search"
+                  value={this.state.search}
+                  onChange={this.handleInputChange}
                 />
               </div>
             </div>
