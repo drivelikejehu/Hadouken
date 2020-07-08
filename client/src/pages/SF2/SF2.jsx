@@ -19,13 +19,9 @@ class SF2 extends Component {
   // };
 
   onClick = (event) => {
-    console.log("testing to make sure this still works");
-    console.log(event.target)
-    const charName = event.target.getAttribute("data-value")
     this.setState({
-      charName: charName,
+      charName: event.target.getAttribute("data-value"),
     });
-    // this.pageChanger();
   };
 
   render() {
@@ -92,7 +88,7 @@ class SF2 extends Component {
               value={this.state.charName}
               src="https://vignette.wikia.nocookie.net/streetfighter/images/5/5c/Guile-oldstance.gif/revision/latest?cb=20080209192854"
               title="Guile"
-              url="/SF2guile"
+              url="/SF2Guile"
               desc="Army dude"
               onClick={this.onClick}
             />
