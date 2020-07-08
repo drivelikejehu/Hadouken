@@ -8,12 +8,7 @@ import Games from "./pages/Games/Games";
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import NotFound from "./pages/NotFound/NotFound";
-import SF2 from "./pages/SF2/SF2";
-import SF2Guile from "./pages/SF2/Characters/SF2Guile";
 // import Footer from "./components/Shared/Footer/Footer";
-import Tek7 from "./pages/Tek7/Tek7";
-import SSBU from "./pages/SSBU/SSBU";
-import DBFZ from "./pages/DBFZ/DBFZ";
 function App() {
   return (
     <>
@@ -28,23 +23,8 @@ function App() {
               <Route exact path="/signup">
                 <Signup />
               </Route>
-              <Route exact path={["/games", "/home"]}>
+              <Route exact path="/games">
                 <Games />
-              </Route>
-              <Route exact path="/SF2">
-                <SF2 />
-              </Route>
-              <Route exact path="/SF2guile">
-                <SF2Guile />
-              </Route>
-              <Route exact path="/DBFZ">
-                <DBFZ />
-              </Route>
-              <Route exact path="/tekken7">
-                <Tek7 />
-              </Route>
-              <Route exact path="/SSBU">
-                <SSBU />
               </Route>
               <Route exact path="/account">
                 <Account />
