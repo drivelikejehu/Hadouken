@@ -14,6 +14,18 @@ class SF2 extends Component {
     });
   };
 
+  pageChanger = (event) => {
+    window.location.href=`/sf2Guile`
+  }
+
+onSubmit = (event) => {
+  event.preventDefault();
+  console.log("testing to make sure this still works")
+  this.setState({
+    charName: this.props.title
+  });
+  this.pageChanger();
+}
 
   render() {
     return (
@@ -46,6 +58,7 @@ class SF2 extends Component {
               title="Ryu"
               url="/SF2Ryu"
               desc="The Highlander"
+              onClick={this.onSubmit}
             />
           </div>
           <div className="col-3">
