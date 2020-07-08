@@ -4,11 +4,7 @@ import Card from "../../components/Shared/Card/Card";
 class SF2 extends Component {
   state = {
     searchTerm: "",
-<<<<<<< HEAD
-    charName: ""
-=======
     charName: "",
->>>>>>> 2c4ae21d15871b9a40557360744e49d940c4cebb
   };
 
   handleChange = (event) => {
@@ -18,14 +14,19 @@ class SF2 extends Component {
     });
   };
 
-<<<<<<< HEAD
- handleClick = (event) => {
-  console.log("this shit is confusing")
-    }
-    
-=======
+  pageChanger = (event) => {
+    window.location.href=`/sf2Guile`
+  }
 
->>>>>>> 2c4ae21d15871b9a40557360744e49d940c4cebb
+onSubmit = (event) => {
+  event.preventDefault();
+  console.log("testing to make sure this still works")
+  this.setState({
+    charName: this.props.title
+  });
+  this.pageChanger();
+}
+
   render() {
     return (
       <div className="container text-center">
@@ -53,18 +54,11 @@ class SF2 extends Component {
         <div className="row">
           <div className="col-3">
             <Card
-<<<<<<< HEAD
-              src="https://cdn.wikimg.net/en/strategywiki/images/c/c8/SSF2T_Guile.gif"
-              title="Guile"
-              url="/SF2guile"
-              desc="It's Guile. You know the man"
-              onSubmit={this.handleClick}
-=======
               src="https://vignette.wikia.nocookie.net/streetfighter/images/7/72/Sf-ryuold.gif/revision/latest?cb=20080211020008"
               title="Ryu"
               url="/SF2Ryu"
               desc="The Highlander"
->>>>>>> 2c4ae21d15871b9a40557360744e49d940c4cebb
+              onClick={this.onSubmit}
             />
           </div>
           <div className="col-3">

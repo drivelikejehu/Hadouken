@@ -3,9 +3,6 @@ import "./Card.css";
 
 const Card = (props) => {
 
-// handleClick = (event) => {
-//   {props.onSubmit}
-// }
 
   return (
     <div className="card justify-content-center">
@@ -14,7 +11,7 @@ const Card = (props) => {
         <h5 className="card-title">{props.title}</h5>
         <p className="card-text">{props.desc}</p>
         <button className="btn btn-primary" 
-        onClick={props.onSubmit}>
+        onClick = {props.onClick}>
           {props.title}
         </button>
       </div>
