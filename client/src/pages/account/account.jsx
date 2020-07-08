@@ -52,7 +52,7 @@ class Account extends Component {
             <div className="col-sm-4">
               <div className="card justify-content-center">
                 <div className="card-body">
-                  <form className="form" onSubmit={this.handleSubmitAvatar}>
+                  <form onSubmit={this.handleSubmitAvatar}>
                     <input
                       id="avatar"
                       type="text"
@@ -63,7 +63,7 @@ class Account extends Component {
                     />
                     <button className="btn btn-primary">Submit</button>
                   </form>
-                  <form className="form" onSubmit={this.handleSubmitUsername}>
+                  <form onSubmit={this.handleSubmitUsername}>
                     <input
                       id="username"
                       type="text"
@@ -74,7 +74,7 @@ class Account extends Component {
                     />
                     <button className="btn btn-primary">Submit</button>
                   </form>
-                  <form className="form" onSubmit={this.handleSubmitBirthday}>
+                  <form onSubmit={this.handleSubmitBirthday}>
                     <input
                       id="birthday"
                       type="text"
