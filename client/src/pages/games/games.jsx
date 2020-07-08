@@ -7,6 +7,11 @@ class Games extends Component {
     search: "",
   };
 
+  handleFormSubmit = (event) => {
+    event.preventDefault();
+    console.log("Hey");
+  };
+
   handleInputChange = (event) => {
     const { name, value } = event.target;
     this.setState({
@@ -17,7 +22,7 @@ class Games extends Component {
   render() {
     return (
       <div className="container text-center">
-        <form>
+        <form onSubmit={this.handleFormSubmit}>
           <div className="row">
             <div className="col">
               <div className="form-group">
