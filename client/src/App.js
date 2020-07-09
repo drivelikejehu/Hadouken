@@ -18,8 +18,8 @@ function App() {
   return (
     <>
       <Router>
-        {/* <main>
-          <article> */}
+        <main>
+          <article>
             <Navbar />
             <Switch>
               <Route exact path={["/", "/login"]}>
@@ -54,8 +54,8 @@ function App() {
               </Route>
             </Switch>
             <Footer />
-          {/* </article>
-        </main> */}
+          </article>
+        </main>
       </Router>
     </>
   );
