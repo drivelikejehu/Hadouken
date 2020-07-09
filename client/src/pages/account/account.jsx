@@ -17,10 +17,9 @@ class Account extends Component {
 
   handleSubmitAvatar = (event) => {
     event.preventDefault();
-    const avatarUrl = this.state.avatar;
     this.setState({
       avatar: "",
-      avatarUrl: avatarUrl,
+      avatarUrl: this.state.avatar,
     });
     console.log("Submit Avatar");
   };

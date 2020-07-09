@@ -8,7 +8,7 @@ class Navbar extends Component {
         <div className="navbar-brand">
           Hadouken
         </div>
-        {/* <button
+        <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -18,9 +18,12 @@ class Navbar extends Component {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button> */}
+        </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
+          <li className="nav-item" id="navbarLink">
+              <Link to={`../Login`}>Login</Link>
+            </li>
             <li className="nav-item" id="navbarLink">
               <Link to={`../Games`}>Games</Link>
             </li>
