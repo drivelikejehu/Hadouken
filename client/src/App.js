@@ -14,6 +14,8 @@ import Footer from "./components/Shared/Footer/Footer";
 import Tek7 from "./pages/Tek7/Tek7";
 import SSBU from "./pages/SSBU/SSBU";
 import DBFZ from "./pages/DBFZ/DBFZ";
+import Combos from "./pages/ComboList/ComboList";
+
 function App() {
   return (
     <>
@@ -30,6 +32,9 @@ function App() {
               </Route>
               <Route exact path={["/games", "/home"]}>
                 <Games />
+              </Route>
+              <Route exact path="/ComboList">
+                <Combos />
               </Route>
               <Route exact path="/SF2">
                 <SF2 />
