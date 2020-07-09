@@ -22,7 +22,8 @@ class SF2 extends Component {
     this.setState({
       charName: event.target.getAttribute("data-value"),
     });
-  };
+    console.log(event.target.getAttribute("charName"))
+  }
 
   render() {
     return (
@@ -57,7 +58,7 @@ class SF2 extends Component {
               title="Ryu"
               url="/SF2Ryu"
               desc="The Highlander"
-              onClick={this.onClick}
+              onClick={this.onClick} 
             />
           </div>
           <div className="col-3">
@@ -93,8 +94,6 @@ class SF2 extends Component {
               onClick={this.onClick}
             />
           </div>
-        </div>
-        <div className="row">
           <div className="col-3">
             <Card
               name="charName"

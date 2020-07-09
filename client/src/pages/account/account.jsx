@@ -7,19 +7,22 @@ class Account extends Component {
     username: "",
     birthday: "",
   };
+//Lifecycle method that grabs user info from backend
+//componentDidMount(){}
 
   handleInputChange = (event) => {
     const { name, value } = event.target;
     this.setState({
-      [name]: value,
+      [name]: value, 
     });
   };
 
   handleSubmitAvatar = (event) => {
-    event.preventDefault();
+    event.preventDefault(); 
+    const avatarUrl = this.state.avatar;
     this.setState({
       avatar: "",
-      avatarUrl: this.state.avatar,
+      avatarUrl: this.state.avatar
     });
     console.log("Submit Avatar");
   };
@@ -52,6 +55,7 @@ class Account extends Component {
               <div className="card justify-content-center">
                 <div className="card-body">
                   <form onSubmit={this.handleSubmitAvatar}>
+                  <div className="form-group">
                     <input
                       id="avatar"
                       type="text"
@@ -61,8 +65,10 @@ class Account extends Component {
                       onChange={this.handleInputChange}
                     />
                     <button className="btn btn-primary">Submit</button>
+                    </div>
                   </form>
                   <form onSubmit={this.handleSubmitUsername}>
+                  <div className="form-group">
                     <input
                       id="username"
                       type="text"
@@ -72,8 +78,10 @@ class Account extends Component {
                       onChange={this.handleInputChange}
                     />
                     <button className="btn btn-primary">Submit</button>
+                    </div>
                   </form>
                   <form onSubmit={this.handleSubmitBirthday}>
+                  <div className="form-group">
                     <input
                       id="birthday"
                       type="text"
@@ -83,6 +91,7 @@ class Account extends Component {
                       onChange={this.handleInputChange}
                     />
                     <button className="btn btn-primary">Submit</button>
+                    </div>
                   </form>
                 </div>
               </div>

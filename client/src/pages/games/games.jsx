@@ -63,8 +63,6 @@ class Games extends Component {
             />
           </div>
           <div className="col-2"></div>
-        </div>
-        <div className="row">
           <div className="col-2"></div>
           <div className="col-3">
             <Card

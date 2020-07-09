@@ -1,77 +1,119 @@
 import React, { Component } from "react";
 
 class Signup extends Component {
+  state = {
+    firstName: "",
+    lastName: "",
+    username: "",
+    email: "",
+    password: "",
+    confirmPass: "",
+  };
+
+  handleInputChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value,
+    });
+  };
+  
+  handleFormSubmit = (event => {
+    event.preventDefault()
+    console.log(event.target)
+  })
+
+  // handleFormSubmit = (event) => {
+  //   this.setState({
+  //     firstName: ,
+  //     lastName: "",
+  //     username: "",
+  //     email: "",
+  //     password: "",
+  //     confirmPass: "",
+  //   });
+  // };
+
   render() {
     return (
       <div className="container">
         <div className="row">
-          <div className="col"></div>
-          <div className="col">
+          <div className="col-md-3"></div>
+          <div className="col-md-6">
             <div className="card justify-content-center">
               <div className="card-body">
                 <form>
                   <div className="form-group">
                     <input
-                      id="firstname"
+                      className="form-control"
                       type="text"
-                      name="firstname"
-                      value="First Name"
-                      label="Firstname"
+                      name="firstName"
+                      value={this.state.firstName}
+                      placeholder="First Name"
+                      onChange={this.handleInputChange}
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      id="lastname"
+                      className="form-control"
                       type="text"
-                      name="lastname"
-                      value="Last Name"
-                      label="Lastname"
+                      name="lastName"
+                      value={this.state.lastName}
+                      placeholder="Last Name"
+                      onChange={this.handleInputChange}
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      id="username"
+                      className="form-control"
                       type="text"
                       name="username"
-                      value="Username"
-                      label="Username"
+                      value={this.state.username}
+                      placeholder="Username"
+                      onChange={this.handleInputChange}
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      id="email"
+                      className="form-control"
                       type="text"
                       name="email"
-                      value="E-mail"
-                      label="Email"
+                      value={this.state.email}
+                      placeholder="E-mail"
+                      onChange={this.handleInputChange}
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      id="password"
+                      className="form-control"
                       type="text"
                       name="password"
-                      value="Password"
-                      label="Password"
+                      value={this.state.password}
+                      placeholder="Password"
+                      onChange={this.handleInputChange}
                     />
                   </div>
                   <div className="form-group">
                     <input
-                      id="confirmPassword"
+                      className="form-control"
                       type="text"
-                      name="confirmPassword"
-                      value="Confirm Password"
-                      label="ConfirmPassword"
+                      name="confirmPass"
+                      value={this.state.confirmPass}
+                      placeholder="Confirm Password"
+                      onChange={this.handleInputChange}
                     />
                   </div>
-                  <button type="submit" className="btn btn-primary">
+                  <button
+                    type="submit"
+                    className="btn btn-primary"
+                    onClick={this.handleFormSubmit}
+                  >
                     Submit
                   </button>
                 </form>
               </div>
             </div>
           </div>
-          <div className="col"></div>
+          <div className="col-md-3"></div>
         </div>
       </div>
     );
