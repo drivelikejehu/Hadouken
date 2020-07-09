@@ -18,3 +18,12 @@ db.User.create({ firstName, lastName, email, password, username, picURl, birthda
 }).catch((err) => {
     console.log(err)})
 })
+
+router.get(":id", (req, res) => {
+db.User.findOne({
+    where:{
+        id: req.params.id
+},
+}
+).then(user => res.json(user));
+});
