@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ComboList from "../../../components/ComboList/ComboList";
+import ComboList from "../../ComboList/ComboList";
 class SF2Guile extends Component {
   state = {
     char: "Guile",

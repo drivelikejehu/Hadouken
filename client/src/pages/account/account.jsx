@@ -7,22 +7,21 @@ class Account extends Component {
     username: "",
     birthday: "",
   };
-//Lifecycle method that grabs user info from backend
-//componentDidMount(){}
+  //Lifecycle method that grabs user info from backend
+  //componentDidMount(){}
 
   handleInputChange = (event) => {
     const { name, value } = event.target;
     this.setState({
-      [name]: value, 
+      [name]: value,
     });
   };
 
   handleSubmitAvatar = (event) => {
-    event.preventDefault(); 
-    const avatarUrl = this.state.avatar;
+    event.preventDefault();
     this.setState({
       avatar: "",
-      avatarUrl: this.state.avatar
+      avatarUrl: this.state.avatar,
     });
     console.log("Submit Avatar");
   };
@@ -55,42 +54,42 @@ class Account extends Component {
               <div className="card justify-content-center">
                 <div className="card-body">
                   <form onSubmit={this.handleSubmitAvatar}>
-                  <div className="form-group">
-                    <input
-                      id="avatar"
-                      type="text"
-                      name="avatar"
-                      value={this.state.avatar}
-                      placeholder="Enter new Avatar url"
-                      onChange={this.handleInputChange}
-                    />
-                    <button className="btn btn-primary">Submit</button>
+                    <div className="form-group">
+                      <input
+                        id="avatar"
+                        type="text"
+                        name="avatar"
+                        value={this.state.avatar}
+                        placeholder="Enter new Avatar url"
+                        onChange={this.handleInputChange}
+                      />
+                      <button className="btn btn-primary">Submit</button>
                     </div>
                   </form>
                   <form onSubmit={this.handleSubmitUsername}>
-                  <div className="form-group">
-                    <input
-                      id="username"
-                      type="text"
-                      name="username"
-                      value={this.state.username}
-                      placeholder="Enter new username"
-                      onChange={this.handleInputChange}
-                    />
-                    <button className="btn btn-primary">Submit</button>
+                    <div className="form-group">
+                      <input
+                        id="username"
+                        type="text"
+                        name="username"
+                        value={this.state.username}
+                        placeholder="Enter new username"
+                        onChange={this.handleInputChange}
+                      />
+                      <button className="btn btn-primary">Submit</button>
                     </div>
                   </form>
                   <form onSubmit={this.handleSubmitBirthday}>
-                  <div className="form-group">
-                    <input
-                      id="birthday"
-                      type="text"
-                      name="birthday"
-                      value={this.state.birthday}
-                      placeholder="Enter new birthday"
-                      onChange={this.handleInputChange}
-                    />
-                    <button className="btn btn-primary">Submit</button>
+                    <div className="form-group">
+                      <input
+                        id="birthday"
+                        type="text"
+                        name="birthday"
+                        value={this.state.birthday}
+                        placeholder="Enter new birthday"
+                        onChange={this.handleInputChange}
+                      />
+                      <button className="btn btn-primary">Submit</button>
                     </div>
                   </form>
                 </div>

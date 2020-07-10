@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import ReactDOM from 'react-dom'
 // import Button from '@material-ui/core/Button'
@@ -15,8 +15,10 @@ import Tek7 from "./pages/Tek7/Tek7";
 import SSBU from "./pages/SSBU/SSBU";
 import DBFZ from "./pages/DBFZ/DBFZ";
 import Combos from "./pages/ComboList/ComboList";
+import axios from "axios";
 
 function App() {
+
   return (
     <>
       <Router>
@@ -33,7 +35,10 @@ function App() {
               <Route exact path={["/games", "/home"]}>
                 <Games />
               </Route>
-              <Route exact path="/ComboList">
+              <Route exact path="/account">
+                <Account />
+              </Route>
+              <Route exact path="/combos">
                 <Combos />
               </Route>
               <Route exact path="/SF2">
@@ -50,9 +55,6 @@ function App() {
               </Route>
               <Route exact path="/SSBU">
                 <SSBU />
-              </Route>
-              <Route exact path="/account">
-                <Account />
               </Route>
               <Route exact path={["*"]}>
                 <NotFound />

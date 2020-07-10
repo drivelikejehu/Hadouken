@@ -5,9 +5,7 @@ class Navbar extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="navbar-brand">
-          Hadouken
-        </div>
+        <div className="navbar-brand">Hadouken</div>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,7 +19,7 @@ class Navbar extends Component {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
-          <li className="nav-item" id="navbarLink">
+            <li className="nav-item" id="navbarLink">
               <Link to={`../Login`}>Login</Link>
             </li>
             <li className="nav-item" id="navbarLink">
@@ -30,8 +28,8 @@ class Navbar extends Component {
             <li className="nav-item" id="navbarLink">
               <Link to={`../Account`}>Account</Link>
             </li>
-            <li className="nav-item" id="navbarLink">
-              <Link to={`../ComboList`}>ComboList</Link>
+            <li className="nav-item" id="navbarLink">  
+              <Link to={`../Combos`}>Combos</Link>
             </li>
           </ul>
         </div>
