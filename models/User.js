@@ -1,5 +1,5 @@
 module.exports = function (sequelize, DataTypes) {
-  const User = sequelize.define(User, {
+  const User = sequelize.define("User", {
     firstName: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -27,17 +27,17 @@ module.exports = function (sequelize, DataTypes) {
       unique: true,
       validate: { is: /^[a-z0-9_-]{3,15}$/ },
     },
-    birthday: {
-        type: Date,
-        allowNull: true,       
-    },
-    picURL:{
-        type: DataTypes.STRING,
-        allowNull: true
-    }
+    // birthday: {
+    //     type: Date,
+    //     allowNull: true,       
+    // },
+    // picURL:{
+    //     type: DataTypes.STRING,
+    //     allowNull: true
+    // },
   });
   User.associate = (models) => {
-    User.hasMany(Combo);
+    User.hasMany(models.Combo);
   };
   return User;
 };
