@@ -12,4 +12,6 @@ module.exports = (sequelize, DataTypes) => {
   Game.associate = (models) => {
     Game.hasMany(Character);
   };
+  return Game;
 };
+

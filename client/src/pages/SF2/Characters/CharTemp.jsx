@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-
+import ComboList from "../../../components/ComboList/ComboList"
 class CharTemp extends Component {
     state = {
-        char: "guile",
+        char: "",
         combo1: "it's combo1",
             combo2: "flash step",
             combo3: "rising break"

@@ -14,9 +14,9 @@ class SF2 extends Component {
     });
   };
 
-  // pageChanger = (event) => {
-  //   window.location.href = `/sf2Guile`;
-  // };
+  pageChanger = (event) => {
+    window.location.href = `/character`;
+  };
 
   onClick = (event) => {
     this.setState({

@@ -15,5 +15,7 @@ module.exports = (sequelize, DataTypes) => {
           foreignKey: "UserId"
       })
     };
+    return Combo;
   };
+  
   

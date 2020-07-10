@@ -37,6 +37,8 @@ module.exports = function (sequelize, DataTypes) {
     }
   });
   User.associate = (models) => {
-
-  }
+    User.hasMany(Combo);
+  };
+  return User;
 };
+

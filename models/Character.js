@@ -16,4 +16,8 @@ module.exports = (sequelize, DataTypes) => {
   Character.associate = (models) => {
     Character.hasMany(Combo);
   };
+
+  return Character;
 };
+
+

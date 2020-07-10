@@ -14,6 +14,7 @@ import Footer from "./components/Shared/Footer/Footer";
 import Tek7 from "./pages/Tek7/Tek7";
 import SSBU from "./pages/SSBU/SSBU";
 import DBFZ from "./pages/DBFZ/DBFZ";
+import CharTemp from "./pages/SF2/Characters/CharTemp"
 function App() {
   return (
     <>
@@ -36,6 +37,9 @@ function App() {
               </Route>
               <Route exact path="/SF2guile">
                 <SF2Guile />
+              </Route>
+              <Route exact path="/character">
+                <CharTemp/>
               </Route>
               <Route exact path="/DBFZ">
                 <DBFZ />
