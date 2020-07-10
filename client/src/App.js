@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import ReactDOM from 'react-dom'
 // import Button from '@material-ui/core/Button'
@@ -15,7 +15,7 @@ import Tek7 from "./pages/Tek7/Tek7";
 import SSBU from "./pages/SSBU/SSBU";
 import DBFZ from "./pages/DBFZ/DBFZ";
 import Combos from "./pages/ComboList/ComboList";
-import axios from "axios";
+
 
 function App() {
 
