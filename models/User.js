@@ -27,10 +27,10 @@ module.exports = function (sequelize, DataTypes) {
       unique: true,
       validate: { is: /^[a-z0-9_-]{3,15}$/ },
     },
-    // birthday: {
-    //     type: Date,
-    //     allowNull: true,       
-    // },
+    birthday: {
+        type: DataTypes.DATE,
+        allowNull: true,       
+    },
     // picURL:{
     //     type: DataTypes.STRING,
     //     allowNull: true
